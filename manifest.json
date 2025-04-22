@@ -1,5 +1,5 @@
 {
-  "name": "GhostBoard GhostESP Firmware",
+  "name": "GhostESP Firmware",
   "version": "A1.4.8",
   "home_assistant_domain": "esphome",
   "funding_url": "https://esphome.io/guides/supporters.html",
@@ -10,6 +10,14 @@
         { "path": "bins/bootloader.bin", "offset": 4096 },
         { "path": "bins/partition-table.bin", "offset": 32768 },
         { "path": "bins/firmware.bin", "offset": 57344 }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "bins/phantom/bootloader.bin", "offset": 4096 },
+        { "path": "bins/phantom/partition-table.bin", "offset": 32768 },
+        { "path": "bins/phantom/firmware.bin", "offset": 57344 }
       ]
     }
   ]
