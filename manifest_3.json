@@ -1,0 +1,28 @@
+{
+
+  "name": "Minion Marauder Firmware",
+
+  "version": "",
+
+  "home_assistant_domain": "Rabbit Labs",
+
+  "funding_url": "https://rabbit-labs.com",
+
+  "builds": [
+
+
+    {
+
+      "chipFamily": "ESP32-S3",
+
+      "parts": [
+
+        { "path": "bins/minion/esp32_marauder_v6.bin", "offset": 0 }
+
+      ]
+
+    }
+
+  ]
+
+}
