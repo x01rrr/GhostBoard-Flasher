@@ -17,7 +17,7 @@
 
       "parts": [
 
-        { "path": "bins/phantom/bootloader.bin", "offset": 4096 },
+        { "path": "bins/minion/bootloader.bin", "offset": 4096 },
         { "path": "bins/minion/partitions.bin", "offset": 32768 },
         { "path": "bins/minion/esp32_marauder_v6.bin", "offset": 65536 }
 
