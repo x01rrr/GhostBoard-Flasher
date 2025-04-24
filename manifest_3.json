@@ -17,7 +17,7 @@
 
       "parts": [
 
-        { "path": "bins/minion/esp32_marauder_v6.bin", "offset": 0 }
+        { "path": "bins/minion/esp32_marauder_v6.bin", "offset": 4096 }
 
       ]
 
