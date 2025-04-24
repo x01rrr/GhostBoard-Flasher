@@ -1,0 +1,14 @@
+{
+  "name": "Bruce Firmware",
+  "version": "",
+  "home_assistant_domain": "Rabbit Labs",
+  "funding_url": "https://rabbit-labs.com",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "../bins/phantom/firmware.bin", "offset": 0 }
+      ]
+    }
+  ]
+}
