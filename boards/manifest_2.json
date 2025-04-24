@@ -1,0 +1,30 @@
+{
+
+  "name": "Phantom Marauder Firmware",
+
+  "version": "",
+
+  "home_assistant_domain": "Rabbit Labs",
+
+  "funding_url": "https://rabbit-labs.com",
+
+  "builds": [
+
+
+    {
+
+      "chipFamily": "ESP32",
+
+      "parts": [
+
+        { "path": "../bins/phantom/marauder_bootloader.bin", "offset": 4096 },
+        { "path": "../bins/phantom/marauder_partitions.bin", "offset": 32768 },
+        { "path": "../bins/phantom/esp32_marauder.bin", "offset": 65536 }
+
+      ]
+
+    }
+
+  ]
+
+}
