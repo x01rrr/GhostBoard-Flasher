@@ -171,6 +171,7 @@
 			<option value="" selected disabled>-</option>
 			<option class="f_m" value="1">Marauder</option>
 			<option class="f_g" value="2">GhostESP</option>
+			<option class="f_b" value="3">Bruce</option>
 		
 		</select>
 		</span>
@@ -218,7 +219,7 @@
 	function SelectDevice() {
 		var device = $( ".sel_device option:selected" ).val();
 		
-		$(".f_m,.f_g").hide();
+		$(".f_m,.f_g,.f_b").hide();
 		if (device != '') {
 			$(".sel_firm").show();
 			if (device == 1) {		// Xeon
@@ -230,6 +231,7 @@
 			}
 			if (device == 3) {		// Phantom
 				$(".f_g").show();
+				$(".f_b").show();
 			}
 			if (device == 4) {		// GhostBoard
 				$(".f_m").show();
@@ -251,6 +253,9 @@
 		}
 		if (fw == 2 && device == 2) {
 			$(".mani").attr("manifest","manifest.json");	// Phantom - GhostESP
+		}
+		if (fw == 3 && device == 2) {
+			$(".mani").attr("manifest","manifest_4.json");	// Phantom - Bruce
 		}
 		if (fw == 2 && device == 3) {
 			$(".mani").attr("manifest","manifest.json"); 	// GhostBoard - GhostESP
