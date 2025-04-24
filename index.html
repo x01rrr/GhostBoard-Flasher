@@ -221,17 +221,17 @@
 		$(".f_m,.f_g").hide();
 		if (device != '') {
 			$(".sel_firm").show();
-			if (device == 1) {
+			if (device == 1) {		// Xeon
 				$(".f_m").show();
 			}
-			if (device == 2) {
+			if (device == 2) {		// Minion
 				// $(".f_m,.f_g").show();
 				$(".f_g").show();
 			}
-			if (device == 3) {
+			if (device == 3) {		// Phantom
 				$(".f_g").show();
 			}
-			if (device == 4) {
+			if (device == 4) {		// GhostBoard
 				$(".f_m").show();
 			}
 			$(".sel_firmware").val('');
