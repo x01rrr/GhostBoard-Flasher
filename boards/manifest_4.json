@@ -7,7 +7,7 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "../bins/phantom/firmware.bin", "offset": 0 }
+        { "path": "../bins/phantom/Bruce-LAUNCHER_CYD-2432W328R-or-S024R.bin", "offset": 0 }
       ]
     }
   ]
