@@ -257,13 +257,13 @@
 		if (fw == 1 && device == 4) {
 			$(".mani").attr("manifest","manifest_3.json");	 // Minion Marauder - Marauder
 		}
-		$(".mani").show();
+		$(".mani").attr("disabled",false);
 	}
 	
       if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
         document.querySelector(".not-supported-i").classList.remove("hidden");
       }
-	$(".mani").hide();
+	$(".mani").attr("disabled",true);
     </script>
   </body>
 </html>
