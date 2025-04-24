@@ -246,22 +246,22 @@
 		var device = $( ".sel_device option:selected" ).val();
 		
 		if (fw == 1 && device == 1) {
-			$(".mani").attr("manifest","manifest.json");	 // Xeon - Marauder
+			$(".mani").attr("manifest","boards/manifest.json");	 // Xeon - Marauder
 		}
 		if (fw == 1 && device == 2) {
-			$(".mani").attr("manifest","manifest_2.json");	// Phantom - Marauder
+			$(".mani").attr("manifest","boards/manifest_2.json");	// Phantom - Marauder
 		}
 		if (fw == 2 && device == 2) {
-			$(".mani").attr("manifest","manifest.json");	// Phantom - GhostESP
+			$(".mani").attr("manifest","boards/manifest.json");	// Phantom - GhostESP
 		}
 		if (fw == 3 && device == 2) {
-			$(".mani").attr("manifest","manifest_4.json");	// Phantom - Bruce
+			$(".mani").attr("manifest","boards/manifest_4.json");	// Phantom - Bruce
 		}
 		if (fw == 2 && device == 3) {
-			$(".mani").attr("manifest","manifest.json"); 	// GhostBoard - GhostESP
+			$(".mani").attr("manifest","boards/manifest.json"); 	// GhostBoard - GhostESP
 		}
 		if (fw == 1 && device == 4) {
-			$(".mani").attr("manifest","manifest_3.json");	 // Minion Marauder - Marauder
+			$(".mani").attr("manifest","boards/manifest_3.json");	 // Minion Marauder - Marauder
 		}
 		$(".mani").show();
 	}
