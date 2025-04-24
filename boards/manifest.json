@@ -1,0 +1,33 @@
+{
+  "name": "GhostESP / Marauder Firmware",
+  "version": "",
+  "home_assistant_domain": "Rabbit Labs",
+  "funding_url": "https://rabbit-labs.com",
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "parts": [
+        { "path": "../bins/ghostboard/bootloader.bin", "offset": 0 },
+        { "path": "../bins/ghostboard/partition-table.bin", "offset": 32768 },
+        { "path": "../bins/ghostboard/firmware.bin", "offset": 65536 }
+      ]
+    },
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "../bins/phantom/bootloader.bin", "offset": 4096 },
+        { "path": "../bins/phantom/partition-table.bin", "offset": 32768 },
+        { "path": "../bins/phantom/firmware.bin", "offset": 65536 }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "../bins/xeon/bootloader.bin", "offset": 0 },
+        { "path": "../bins/xeon/partitions.bin", "offset": 32768 },
+        { "path": "../bins/xeon/boot_app0.bin", "offset": 57344 },
+        { "path": "../bins/xeon/esp32_marauder_multiboardS3.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
