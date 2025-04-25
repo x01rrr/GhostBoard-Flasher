@@ -1,0 +1,30 @@
+{
+
+  "name": "YapperBoard Marauder Firmware",
+
+  "version": "",
+
+  "home_assistant_domain": "Rabbit Labs",
+
+  "funding_url": "https://rabbit-labs.com",
+
+  "builds": [
+
+
+    {
+
+      "chipFamily": "ESP32",
+
+      "parts": [
+
+        { "path": "../bins/rocket/bootloader.bin", "offset": 4096 },
+        { "path": "../bins/rocket/partitions.bin", "offset": 32768 },
+        { "path": "../bins/rocket/esp32_marauder_v1_4_4_20250422_old_hardware.bin", "offset": 65536 }
+
+      ]
+
+    }
+
+  ]
+
+}
