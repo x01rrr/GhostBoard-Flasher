@@ -158,11 +158,12 @@
 		<select class="sel_device" onChange="this.blur();SelectDevice()">
 		
 			<option value="" selected disabled>-</option>
-			<option value="5">RocketESP</option>
-			<option value="1">Xeon</option>
 			<option value="4">Minion Marauder</option>
 			<option value="2">Phantom</option>
-			<option value="3">GhostBoard</option>
+			<option value="5">RocketESP</option>
+			<option value="6">Yapper Board</option>
+			<option value="1">Xeon Board</option>
+			<option value="3">Ghost Board</option>
 		
 		</select>
 		<span class="sel_firm" onChange="this.blur();SelectFirmware()">
@@ -240,6 +241,9 @@
 			if (device == 5) {		// RocketESP
 				$(".f_m").show();
 			}
+			if (device == 6) {		// Yapper
+				$(".f_m").show();
+			}
 			$(".sel_firmware").val('');
 		}
 		$(".mani").hide();
@@ -269,6 +273,9 @@
 		}
 		if (fw == 1 && device == 5) {
 			$(".mani").attr("manifest","boards/manifest_5.json");	 // RocketESP - Marauder
+		}
+		if (fw == 1 && device == 6) {
+			$(".mani").attr("manifest","boards/manifest_6.json");	 // RocketESP - Marauder
 		}
 		$(".mani").show();
 	}
