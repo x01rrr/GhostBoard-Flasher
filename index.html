@@ -135,14 +135,7 @@
       type="module"
       src="https://unpkg.com/@justinribeiro/lite-youtube@1.4.0/lite-youtube.js"
     ></script>
-    <script module>
-      import(
-        // In development we import locally.
-        window.location.hostname === "localhost"
-          ? "/dist/web/install-button.js"
-          : "https://unpkg.com/esp-web-tools/dist/web/install-button.js?module"
-      );
-    </script>
+    <script src="js/install-button.js?module"></script>
   </head>
   <body>
     <div class="content">
