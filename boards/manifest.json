@@ -9,7 +9,7 @@
       "parts": [
         { "path": "../bins/ghostboard/bootloader.bin", "offset": 0 },
         { "path": "../bins/ghostboard/partition-table.bin", "offset": 32768 },
-        { "path": "../bins/ghostboard/firmware.bin", "offset": 65536 }
+        { "path": "../bins/ghostboard/Ghost_ESP_IDF.bin", "offset": 65536 }
       ]
     },
     {
@@ -17,7 +17,7 @@
       "parts": [
         { "path": "../bins/phantom/bootloader.bin", "offset": 4096 },
         { "path": "../bins/phantom/partition-table.bin", "offset": 32768 },
-        { "path": "../bins/phantom/firmware.bin", "offset": 65536 }
+        { "path": "../bins/phantom/Ghost_ESP_IDF.bin", "offset": 65536 }
       ]
     },
     {
