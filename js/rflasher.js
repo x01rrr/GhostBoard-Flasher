@@ -81,11 +81,11 @@ function KokoLatestLink(port,device) {
 
 var repo_url = 'https://api.github.com/repos/justcallmekoko/ESP32Marauder/releases';
 	
-var devices = 'ESP32';
-var offset = '4096';
-if (port == 'boardS3') {
-	offset = '0';
-	devices = 'ESP32-S3';
+var devices = "ESP32";
+var offset = "4096";
+if (port == "boardS3") {
+	offset = "0";
+	devices = "ESP32-S3";
 }
 	
 fetch(repo_url)
