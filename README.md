@@ -1,8 +1,7 @@
 Rabbit-Labs.com
 
-Xeon Board | Phantom | GhostBoard WebFlasher
-
-https://x01rrr.github.io/GhostBoard-Flasher/
+Use the official Rabbit-Labs WebFlasher
+https://flaster.site
 
 
 
